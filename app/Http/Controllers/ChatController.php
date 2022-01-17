@@ -2,16 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\Message;
+use App\Events\NewMessage;
+use App\Models\Message;
 use Illuminate\Http\Request;
 
 class ChatController extends Controller
 {
     public function message(Request $request){
 
-        event( new Message($request->username,$request->message));
+         $message =Message::create([
+            'username' => $request->username,
+            'message' => $request->content
+        ]);
 
-        return [];
+        event( new NewMessage($message));
+
+        return response()->json(['success' => true]);
 
 
     }
