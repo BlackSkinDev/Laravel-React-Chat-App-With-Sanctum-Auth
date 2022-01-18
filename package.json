@@ -24,6 +24,8 @@
         "sass-loader": "^11.0.1"
     },
     "dependencies": {
+        "jquery": "^3.6.0",
+        "laravel-echo": "^1.11.3",
         "pusher-js": "^7.0.3"
     }
 }

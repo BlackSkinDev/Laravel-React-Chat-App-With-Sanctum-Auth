@@ -1,0 +1,15 @@
+.scrollarea {
+    max-height:500px;
+    overflow-y: auto;
+}
+.my-row{
+    align-content: center;
+    margin-top:50px;
+
+}
+
+.my-column{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding:30px;
+    background-color:#BC8F8F;
+}

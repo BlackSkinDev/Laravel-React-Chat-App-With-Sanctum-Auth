@@ -4,6 +4,7 @@
  * building robust, powerful web applications using React + Laravel.
  */
 
+ 
 require('./bootstrap');
 
 /**
