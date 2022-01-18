@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import Axios from 'axios'
 import Pusher from "pusher-js";
 import  styles  from '../styles/style.css'
-import $ from "jquery";
 
 class App extends Component {
     state ={
@@ -20,7 +19,7 @@ class App extends Component {
     async componentDidMount() {
         await this.getMessages();
         this.listenForNewMessage();
-        //console.log(this.state)
+        
     }
 
 
